@@ -9,7 +9,9 @@ export class CountriesService {
 
   private apiUrl: string = 'https://restcountries.com/v3.1'
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    console.log('Inicialización de ContriesService');
+   }
 
   private getCountriesRequest ( url: string ): Observable<(Country[])> {
 
