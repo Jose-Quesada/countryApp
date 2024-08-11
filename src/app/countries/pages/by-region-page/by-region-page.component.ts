@@ -11,6 +11,7 @@ import { CountriesService } from '../../services/countries.service';
   templateUrl: './by-region-page.component.html',
   styles: ``
 })
+
 export class ByRegionPageComponent implements OnInit {
   public countries: Country[] = [];
   public regions: Region[]= [ 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
